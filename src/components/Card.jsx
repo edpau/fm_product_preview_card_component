@@ -25,12 +25,12 @@ const Card = ({ product }) => {
         />
       </picture>
       <section className="p-6 sm:max-w-[50%] sm:p-8">
-        <h3 className="font-subHeading text-xs font-medium uppercase tracking-[0.3125rem] text-neutral-primary">
+        <h2 className="font-subHeading text-xs font-medium uppercase tracking-[0.3125rem] text-neutral-primary">
           {category}
-        </h3>
-        <h2 className="mt-3 font-heading text-[2rem] font-bold leading-8 text-neutral-secondary sm:mt-5">
-          {productName}
         </h2>
+        <h1 className="mt-3 font-heading text-[2rem] font-bold leading-8 text-neutral-secondary sm:mt-5">
+          {productName}
+        </h1>
         <p className="mt-4 font-body text-paragraph font-medium leading-[1.4375rem] text-neutral-primary sm:mt-6">
           {description}
         </p>
