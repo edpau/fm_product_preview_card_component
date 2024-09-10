@@ -14,7 +14,7 @@ const Card = ({ product }) => {
 
   return (
     <article
-      className="max-w-[91%] overflow-hidden rounded-xl bg-neutral-primary sm:flex sm:max-w-[600px]"
+      className="max-w-[91%] overflow-hidden rounded-xl bg-neutral-primary sm:flex sm:max-w-[37.5rem]"
       aria-labelledby={`product-name-${productId}`}
     >
       <picture>
