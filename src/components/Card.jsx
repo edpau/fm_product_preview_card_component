@@ -1,7 +1,6 @@
 import shoppingCartLogo from "../assets/images/icon-cart.svg";
 
 const Card = ({ product }) => {
-  
   const {
     category,
     productName,
@@ -13,7 +12,10 @@ const Card = ({ product }) => {
   } = product;
 
   return (
-    <article className="max-w-[91%] overflow-hidden rounded-xl bg-neutral-primary sm:flex sm:max-w-[600px]" aria-labelledby={`product-name-${productId}`}>
+    <article
+      className="max-w-[91%] overflow-hidden rounded-xl bg-neutral-primary sm:flex sm:max-w-[600px]"
+      aria-labelledby={`product-name-${productId}`}
+    >
       <picture>
         <source srcSet={image.desktop} media="(min-width: 640px)" />
         <img
@@ -28,7 +30,10 @@ const Card = ({ product }) => {
         <h2 className="font-subHeading text-xs font-medium uppercase tracking-[0.3125rem] text-neutral-primary">
           {category}
         </h2>
-        <h1 id={`product-name-${productId}`} className="mt-3 font-heading text-[2rem] font-bold leading-8 text-neutral-secondary sm:mt-5">
+        <h1
+          id={`product-name-${productId}`}
+          className="mt-3 font-heading text-[2rem] font-bold leading-8 text-neutral-secondary sm:mt-5"
+        >
           {productName}
         </h1>
         <p className="mt-4 font-body text-paragraph font-medium leading-[1.4375rem] text-neutral-primary sm:mt-6">
@@ -38,9 +43,10 @@ const Card = ({ product }) => {
           <p className="font-priceTag text-[2rem] font-bold leading-8 text-brand-primary">
             {discountedPrice}
           </p>
-          <p className="font-body text-[0.8125rem] font-medium leading-6 text-neutral-primary line-through">
+          <s className="font-body text-[0.8125rem] font-medium leading-6 text-neutral-primary">
+            <span className="sr-only">Original Price:</span>
             {originalPrice}
-          </p>
+          </s>
         </div>
         <button className="mt-5 flex h-12 w-full cursor-pointer items-center justify-center gap-3 rounded-lg bg-brand-secondary font-body text-paragraph font-bold text-onbrand-primary transition duration-300 ease-in-out hover:bg-brand-secondary-hover sm:mt-[29px]">
           <img src={shoppingCartLogo} alt="" /> Add to Cart
