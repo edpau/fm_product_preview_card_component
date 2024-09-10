@@ -31,12 +31,12 @@ const Card = ({ product }) => {
         <p className="font-category text-xs font-medium uppercase tracking-[0.3125rem] text-neutral-primary">
           {category}
         </p>
-        <h1
+        <h2
           id={`product-name-${productId}`}
           className="mt-3 font-heading text-[2rem] font-bold leading-8 text-neutral-secondary sm:mt-5"
         >
           {productName}
-        </h1>
+        </h2>
         <p className="mt-4 font-body text-paragraph font-medium leading-[1.4375rem] text-neutral-primary sm:mt-6">
           {description}
         </p>
