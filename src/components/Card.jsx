@@ -43,7 +43,7 @@ const Card = ({ product }) => {
           </p>
         </div>
         <button className="mt-5 flex h-12 w-full cursor-pointer items-center justify-center gap-3 rounded-lg bg-brand-secondary font-body text-paragraph font-bold text-onbrand-primary transition duration-300 ease-in-out hover:bg-brand-secondary-hover sm:mt-[29px]">
-          <img src={shoppingCartLogo} alt="shopping cart logo" /> Add to Cart
+          <img src={shoppingCartLogo} alt="" /> Add to Cart
         </button>
       </section>
     </article>
