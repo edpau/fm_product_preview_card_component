@@ -2,6 +2,7 @@ import shoppingCartLogo from "../assets/images/icon-cart.svg";
 
 const Card = ({ product }) => {
   const {
+    productId,
     category,
     productName,
     description,
