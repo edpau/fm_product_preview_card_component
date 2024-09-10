@@ -20,7 +20,7 @@ export default {
       },
       fontFamily: {
         heading: ["Fraunces", "serif"],
-        subHeading: ["Montserrat", "sans-serif"],
+        category: ["Montserrat", "sans-serif"],
         body: ["Montserrat", "sans-serif"],
         priceTag: ["Fraunces", "serif"],
       },

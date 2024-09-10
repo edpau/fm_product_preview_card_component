@@ -28,9 +28,9 @@ const Card = ({ product }) => {
         />
       </picture>
       <section className="p-6 sm:max-w-[50%] sm:p-8">
-        <h2 className="font-subHeading text-xs font-medium uppercase tracking-[0.3125rem] text-neutral-primary">
+        <p className="font-category text-xs font-medium uppercase tracking-[0.3125rem] text-neutral-primary">
           {category}
-        </h2>
+        </p>
         <h1
           id={`product-name-${productId}`}
           className="mt-3 font-heading text-[2rem] font-bold leading-8 text-neutral-secondary sm:mt-5"
